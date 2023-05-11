@@ -1,0 +1,21 @@
+{
+    "Statement": [
+        {
+            "Action": [
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DeleteTags",
+                "ec2:DeleteSecurityGroup",
+                "ec2:CreateTags",
+                "ec2:CreateSecurityGroup",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:AuthorizeSecurityGroupEgress"
+            ],
+            "Effect": "Allow",
+            "Resource": "*",
+            "Sid": "CloudGuardWrite"
+        }
+    ],
+    "Version": "2012-10-17"
+}
